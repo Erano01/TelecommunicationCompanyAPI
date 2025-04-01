@@ -1,5 +1,6 @@
 package me.erano.com.domain;
 
+//value object
 public class RouterId {
 
     private String id;
