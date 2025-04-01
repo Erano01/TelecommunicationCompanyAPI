@@ -6,7 +6,7 @@
 - Business domains burada bulunur.
 
 ## Application (Core) Hexagon
-- Business domains constraints (**istenilen/olması gereken fonksiyonların soyutlamaları**) burada yer alır.
+- Business domains constraints (**istenilen/olması gereken yazılımdaki fonksiyonalitelerin soyutlamaları**) burada yer alır.
 - **Input/Output portları ve Use Case’lerin soyutlamaları** burada bulunur.
 
 ## Framework Hexagon
