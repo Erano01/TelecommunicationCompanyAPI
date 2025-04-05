@@ -1,9 +1,9 @@
 package me.erano.com.framework.adapters;
 
-import me.erano.com.core.RouterViewOutputPort;
-import me.erano.com.domain.Router;
-import me.erano.com.domain.RouterId;
-import me.erano.com.domain.RouterType;
+import me.erano.com.core.ports.RouterViewOutputPort;
+import me.erano.com.domain.entity.Router;
+import me.erano.com.domain.value.RouterId;
+import me.erano.com.domain.value.RouterType;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

@@ -1,9 +1,9 @@
 package me.erano.com.framework.adapters;
 
-import me.erano.com.core.RouterViewInputPort;
-import me.erano.com.core.RouterViewUseCase;
-import me.erano.com.domain.Router;
-import me.erano.com.domain.RouterType;
+import me.erano.com.core.ports.RouterViewInputPort;
+import me.erano.com.core.usecases.RouterViewUseCase;
+import me.erano.com.domain.entity.Router;
+import me.erano.com.domain.value.RouterType;
 
 import java.util.List;
 

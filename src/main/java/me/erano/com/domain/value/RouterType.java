@@ -1,4 +1,4 @@
-package me.erano.com.domain;
+package me.erano.com.domain.value;
 
 //value object
 public enum RouterType {

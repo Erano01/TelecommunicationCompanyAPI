@@ -1,8 +1,8 @@
-package me.erano.com.core;
+package me.erano.com.core.usecases;
 
 import java.util.List;
 import java.util.function.Predicate;
-import me.erano.com.domain.Router;
+import me.erano.com.domain.entity.Router;
 
 //use case
 //Use caseler, domain constraintlerini desteklemek için var olan application-specific işlemler aracılığıyla sistemin davranışını temsil eder. Use caseleri, entityler ve diğer use caseleriyle doğrudan etkileşime girebilir ve bunları esnek componentler haline getirebilir.

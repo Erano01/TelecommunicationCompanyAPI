@@ -1,6 +1,6 @@
-package me.erano.com.core;
+package me.erano.com.core.ports;
 
-import me.erano.com.domain.Router;
+import me.erano.com.domain.entity.Router;
 
 import java.util.List;
 
