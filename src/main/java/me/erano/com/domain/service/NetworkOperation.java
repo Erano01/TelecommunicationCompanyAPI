@@ -1,6 +1,10 @@
 package me.erano.com.domain.service;
 
 import me.erano.com.domain.entity.Router;
+import me.erano.com.domain.specification.CIDRSpecification;
+import me.erano.com.domain.specification.NetworkAmountSpecification;
+import me.erano.com.domain.specification.NetworkAvailabilitySpecification;
+import me.erano.com.domain.specification.RouterTypeSpecification;
 import me.erano.com.domain.value.Network;
 
 public class NetworkOperation {

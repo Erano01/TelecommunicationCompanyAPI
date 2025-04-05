@@ -1,5 +1,10 @@
 package me.erano.com.domain.entity;
 
+import me.erano.com.domain.value.IP;
+import me.erano.com.domain.value.Network;
+import me.erano.com.domain.value.SwitchId;
+import me.erano.com.domain.value.SwitchType;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

@@ -1,5 +1,12 @@
 package me.erano.com.domain.entity;
 
+import me.erano.com.domain.policy.RegexEventParser;
+import me.erano.com.domain.policy.SplitEventParser;
+import me.erano.com.domain.value.Activity;
+import me.erano.com.domain.value.EventId;
+import me.erano.com.domain.value.ParsePolicyType;
+import me.erano.com.domain.value.Protocol;
+
 import java.time.OffsetDateTime;
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package me.erano.com.domain.policy.shared;
+package me.erano.com.domain.specification.shared;
 
 public abstract class AbstractSpecification<T> implements Specification<T> {
 

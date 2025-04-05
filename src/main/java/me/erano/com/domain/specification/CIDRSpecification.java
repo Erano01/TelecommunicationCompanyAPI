@@ -1,6 +1,6 @@
-package me.erano.com.domain.policy;
+package me.erano.com.domain.specification;
 
-import me.erano.com.domain.policy.shared.AbstractSpecification;
+import me.erano.com.domain.specification.shared.AbstractSpecification;
 
 //Classless Inter-Domain Routing
 //Network adresinin tüm networkde herhangi bir yerde zaten kullanılıp kullanılmadığını doğrular.

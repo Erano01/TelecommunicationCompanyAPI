@@ -1,4 +1,4 @@
-package me.erano.com.domain.policy.shared;
+package me.erano.com.domain.specification.shared;
 
 // We use Policy pattern its known as strategy design pattern.
 // Policies are intentionally kept separate from entities and value objects to avoid coupling.

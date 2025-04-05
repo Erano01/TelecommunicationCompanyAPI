@@ -1,4 +1,9 @@
-package me.erano.com.domain.policy;
+package me.erano.com.domain.specification;
+
+import me.erano.com.domain.entity.Router;
+import me.erano.com.domain.specification.shared.AbstractSpecification;
+import me.erano.com.domain.value.IP;
+import me.erano.com.domain.value.Network;
 
 public class NetworkAvailabilitySpecification extends AbstractSpecification<Router> {
 
