@@ -2,6 +2,7 @@ package me.erano.com.core.ports;
 
 import me.erano.com.core.usecases.RouterViewUseCase;
 import me.erano.com.domain.entity.Router;
+import me.erano.com.domain.service.RouterSearch;
 
 import java.util.List;
 import java.util.function.Predicate;
@@ -24,6 +25,6 @@ public class RouterViewInputPort implements RouterViewUseCase {
     @Override
     public List<Router> getRouters(Predicate<Router> filter) {
         var routers = routerListOutputPort.fetchRouters();
-        return Router.retrieveRouter(routers, filter);
+        return RouterSearch.retrieveRouter(routers, filter);
     }
 }
