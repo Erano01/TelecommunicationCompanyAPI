@@ -33,7 +33,7 @@ public class RouterViewFileAdapter implements RouterViewOutputPort {
                 String[] routerEntry = line.split(";");
                 var id = routerEntry[0];
                 var type = routerEntry[1];
-                Router router = new Router(RouterType.valueOf(type), RouterId.of(id));
+                Router router = new Router(RouterType.valueOf(type),RouterId.withId(id));
                 routers.add(router);
             });
         } catch (Exception e){
@@ -41,7 +41,6 @@ public class RouterViewFileAdapter implements RouterViewOutputPort {
         }
         return routers;
     }
-
 
     private RouterViewFileAdapter() {
     }
