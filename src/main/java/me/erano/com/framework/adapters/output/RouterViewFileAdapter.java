@@ -1,4 +1,4 @@
-package me.erano.com.framework.adapters;
+package me.erano.com.framework.adapters.output;
 
 import me.erano.com.core.ports.RouterViewOutputPort;
 import me.erano.com.domain.entity.Router;

@@ -7,13 +7,10 @@ import me.erano.com.domain.service.RouterSearch;
 import java.util.List;
 import java.util.function.Predicate;
 
-//input port
-//Use caseler yalnızca yazılımın ne yaptığını tanımlayan arayüzlerse,
-// bu use caselerin arayüzünü gerçekleştirmemiz gerektiğini gösterir.
-// Input portunun rolü budur. Application levelinde, use caselerine
-// doğrudan bağlı bir component olarak, input portları, domain terimlerinde
-// yazılım amacını gerçekleştirmemize olanak tanır. İşte use case'da belirtilen
-// yazılım amacını yerine getiren bir gerçekleştirme sağlayan bir input portu
+//Input Port
+// Dış dünya (misafir), bu kapıdan içeri girmeye çalışır.
+// Ama içeri direkt giremez, önce input adapter (örneğin REST Controller) gelip kapıyı açar.
+// Input Portlarında Use Caselerimizi implement ederiz
 public class RouterViewInputPort implements RouterViewUseCase {
 
     private RouterViewOutputPort routerListOutputPort;
