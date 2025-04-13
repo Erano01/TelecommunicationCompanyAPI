@@ -10,7 +10,7 @@ import me.erano.com.domain.specification.NetworkAvailabilitySpecification;
 import me.erano.com.domain.value.IP;
 import me.erano.com.domain.value.Network;
 import me.erano.com.domain.value.RouterId;
-import me.erano.com.framework.adapters.output.RouterNetworkFileAdapter;
+import me.erano.com.framework.adapters.output.file.RouterNetworkFileAdapter;
 
 public class AddNetworkSteps {
 

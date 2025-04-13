@@ -1,6 +1,6 @@
 package me.erano.com;
 
-import me.erano.com.framework.adapters.input.RouterViewCLIAdapter;
+import me.erano.com.framework.adapters.input.stdin.RouterViewCLIAdapter;
 
 public class Application {
 

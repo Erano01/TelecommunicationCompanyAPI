@@ -1,4 +1,4 @@
-package me.erano.com.core.ports;
+package me.erano.com.core.ports.output;
 
 import me.erano.com.domain.entity.Router;
 import me.erano.com.domain.value.RouterId;

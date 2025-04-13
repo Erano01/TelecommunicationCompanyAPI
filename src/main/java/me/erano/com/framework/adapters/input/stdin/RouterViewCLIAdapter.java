@@ -1,10 +1,11 @@
-package me.erano.com.framework.adapters.input;
+package me.erano.com.framework.adapters.input.stdin;
 
-import me.erano.com.core.ports.RouterViewInputPort;
+import me.erano.com.core.ports.input.RouterViewInputPort;
 import me.erano.com.core.usecases.RouterViewUseCase;
 import me.erano.com.domain.entity.Router;
 import me.erano.com.domain.value.RouterType;
-import me.erano.com.framework.adapters.output.RouterViewFileAdapter;
+import me.erano.com.framework.adapters.output.file.RouterViewFileAdapter;
+import me.erano.com.core.usecases.RouterViewUseCase.RelatedRoutersCommand;
 
 import java.util.List;
 
@@ -21,8 +22,8 @@ public class RouterViewCLIAdapter {
     }
 
     public List<Router> obtainRelatedRouters(String type) {
-        return routerViewUseCase.getRouters(
-                Router.filterRouterByType(RouterType.valueOf(type)));
+        RelatedRoutersCommand relatedRoutersCommand = new RelatedRoutersCommand(type);
+        return routerViewUseCase.getRelatedRouters(relatedRoutersCommand);
     }
 
     private void setAdapters(){

@@ -1,5 +1,6 @@
-package me.erano.com.core.ports;
+package me.erano.com.core.ports.input;
 
+import me.erano.com.core.ports.output.RouterNetworkOutputPort;
 import me.erano.com.core.usecases.RouterNetworkUseCase;
 import me.erano.com.domain.entity.Router;
 import me.erano.com.domain.service.NetworkOperation;
@@ -37,5 +38,4 @@ public class RouterNetworkInputPort implements RouterNetworkUseCase {
     private boolean persistNetwork(Router router) {
         return routerNetworkOutputPort.persistRouter(router);
     }
-
 }

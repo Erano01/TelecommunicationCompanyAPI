@@ -12,33 +12,27 @@ import java.util.function.Predicate;
 //Aggregate Root for network components (IP, Switch, Network)
 public class Router {
 
-    private final RouterType routerType;
-    private final RouterId routerId;
+    private RouterType type;
+    private RouterId id;
     private Switch networkSwitch;
 
-    public Router(RouterType routerType, RouterId routerId) {
-        this.routerType = routerType;
-        this.routerId = routerId;
+    public Router(){
+
     }
 
-    public Router(RouterType routerType, RouterId routerId, Switch networkSwitch) {
-        this.routerType = routerType;
-        this.routerId = routerId;
+    public Router(RouterType type, RouterId id) {
+        this.type = type;
+        this.id = id;
+    }
+
+    public Router(RouterType type, RouterId id, Switch networkSwitch) {
+        this.type = type;
+        this.id = id;
         this.networkSwitch = networkSwitch;
     }
 
-    public static Predicate<Router> filterRouterByType(RouterType routerType){
-        return routerType.equals(RouterType.CORE)
-                ? Router.isCore() :
-                Router.isEdge();
-    }
-
-    public static Predicate<Router> isCore(){
-        return p -> p.getRouterType() == RouterType.CORE;
-    }
-
-    public static Predicate<Router> isEdge(){
-        return p -> p.getRouterType() == RouterType.EDGE;
+    public boolean isType(RouterType type){
+        return this.type == type;
     }
 
     public void addNetworkToSwitch(Network network){
@@ -53,19 +47,23 @@ public class Router {
         return networkSwitch.getNetworks();
     }
 
-    public RouterType getRouterType(){
-        return routerType;
+    public RouterType getType() {
+        return type;
     }
 
-    public RouterId getRouterId() {
-        return routerId;
+    public RouterId getId() {
+        return id;
+    }
+
+    public Switch getNetworkSwitch() {
+        return networkSwitch;
     }
 
     @Override
     public String toString() {
         return "Router{" +
-                "routerType=" + routerType +
-                ", routerId=" + routerId +
+                "type=" + type +
+                ", id=" + id +
                 ", networkSwitch=" + networkSwitch +
                 '}';
     }
