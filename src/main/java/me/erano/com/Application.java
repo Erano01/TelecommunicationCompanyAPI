@@ -23,8 +23,8 @@ import java.util.Scanner;
 //add?routerId=ca23800e-9b5a-11eb-a8b3-0242ac130003&address=40.0.
 //0.0&name=Finance&cidr=8" | jq
 
-// for h2:
-// java -jar target/TelecommunicationCompanyAPI-1.0-SNAPSHOT-jar-with-dependencies.jar h2
+// for cli:
+// java -jar target/TelecommunicationCompanyAPI-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 public class Application {
 
